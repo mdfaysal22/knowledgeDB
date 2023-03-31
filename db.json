@@ -1,0 +1,44 @@
+{
+    "boss":[
+    {
+      "id": 102,
+      "name": "Mr. Raju",
+      "image": "img1.png",
+      "profile":"p1.png",
+      "published_in": "Mar 14 (4 Days ago)",
+      "title": "How to get your first job as a self-taught programmer 1",
+      "read": "5",
+      "hash": "#programming #React"
+    },
+    {
+      "id": 302,
+      "name": "Mrs. Setara",
+      "image": "img2.png",
+      "profile":"p2.png",
+      "published_in": "Mar 14 (4 Days ago)",
+      "title": "How to get your first job as a self-taught programmer 2",
+      "read": "12",
+      "hash": "#programming #vite"
+    },
+    {
+      "id": 402,
+      "name": "Mina Mostofa",
+      "image": "img3.png",
+      "profile":"p3.png",
+      "published_in": "Mar 14 (4 Days ago)",
+      "title": "How to get your first job as a self-taught programmer 3",
+      "read": "20",
+      "hash": "#programming #Remix"
+    },
+    {
+      "id": 502,
+      "name": "Mina ",
+      "image": "img2.png",
+      "profile":"p3.png",
+      "published_in": "Mar 5 (4 Days ago)",
+      "title": "How to get your first job as a self-taught programmer 4",
+      "read":"25",
+      "hash": "#programming #boot"
+    }
+  ]
+  }
