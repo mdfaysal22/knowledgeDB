@@ -1,22 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BCard from './BCard/BCard';
 
 
-const Aside = ({bookmarked}) => {
+const Aside = ({totalTime, bookedData}) => {
+    const [bookmarkedItems, setBookmarkedItems] = useState([]);
+    
 
-    const data = [
-        "Master Microsoft Power Platform and Become an fff ", "Master Microsoft Power Platform and Become an fff ", "Master Microsoft Power Platform and Become an fff "
-    ]
+    useEffect(() => {
+        const getBookmarked = localStorage.getItem("bookmarked");
+        if(getBookmarked){
+            setBookmarkedItems(JSON.parse(getBookmarked));
+        }
+    }, [bookedData])
+
+    
     return (
-        <div>
+        <div className='sticky top-1 z-50'>
             <div className='border-2 p-5 bg-indigo-100 border-indigo-600 rounded-md'>
-                <h1 className='text-2xl text-indigo-600	font-semibold'>Spent time on read : 177 min</h1>
+                <h1 className='text-2xl text-indigo-600	font-semibold'>Spent time on read : <span>{totalTime}</span> min</h1>
             </div>
 
             <div className='bg-gray-200 mt-8 p-5 rounded-md'>
-                <h1 className='text-2xl mb-4 font-semibold'>Bookmarked Blogs : 8</h1>
+                <h1 className='text-2xl mb-4 font-semibold'>Bookmarked Blogs : <span>{bookmarkedItems.length}</span></h1>
                 {
-                    data.map((single, i) => <BCard key={i} single={single}></BCard>)
+                    bookmarkedItems.map((single, i) => <BCard key={i} single={single}></BCard>)
                 }
                 
             </div>

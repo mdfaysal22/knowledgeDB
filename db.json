@@ -7,7 +7,7 @@
       "profile":"p1.png",
       "published_in": "Mar 14 (4 Days ago)",
       "title": "How to get your first job as a self-taught programmer 1",
-      "read": "5",
+      "read": 5,
       "hash": "#programming #React"
     },
     {
@@ -17,7 +17,7 @@
       "profile":"p2.png",
       "published_in": "Mar 14 (4 Days ago)",
       "title": "How to get your first job as a self-taught programmer 2",
-      "read": "12",
+      "read": 12,
       "hash": "#programming #vite"
     },
     {
@@ -27,7 +27,7 @@
       "profile":"p3.png",
       "published_in": "Mar 14 (4 Days ago)",
       "title": "How to get your first job as a self-taught programmer 3",
-      "read": "20",
+      "read": 20,
       "hash": "#programming #Remix"
     },
     {
@@ -37,7 +37,7 @@
       "profile":"p3.png",
       "published_in": "Mar 5 (4 Days ago)",
       "title": "How to get your first job as a self-taught programmer 4",
-      "read":"25",
+      "read":25,
       "hash": "#programming #boot"
     }
   ]

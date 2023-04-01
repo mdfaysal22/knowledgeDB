@@ -1,7 +1,7 @@
 import React from 'react';
 import {BsBookmark} from 'react-icons/bs';
 
-const Card = ({singleData, handleBookmark}) => {
+const Card = ({singleData, handleBookmark, readTime}) => {
     const {name, image, profile, hash, published_in, read, title} = singleData;
     return (
         <div className='mb-5'>
@@ -25,7 +25,7 @@ const Card = ({singleData, handleBookmark}) => {
             <div className='mb-4'>
                 <h1 className='text-4xl font-semibold'>{title}</h1>
                 <small className='block py-5 text-lg font-semibold text-gray-400'>{hash}</small>
-                <button className='underline text-blue-600 hover:text-blue-700'>Mark as read</button>
+                <button onClick={() => readTime(read)} className='underline text-blue-600 hover:text-blue-700'>Mark as read</button>
             </div>
             <div className="divider"></div>
         </div>
